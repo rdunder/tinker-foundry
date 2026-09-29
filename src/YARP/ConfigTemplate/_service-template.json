@@ -1,0 +1,37 @@
+{
+  "ReverseProxy": {
+    "Routes": {
+      "SERVICE_NAME-route": {
+        "ClusterId": "SERVICE_NAME-cluster",
+        "RateLimiterPolicy": "fixed",
+        "AuthorizationPolicy": "default",
+        "Match": {
+          "Path": "/api/SERVICE_NAME/{**catch-all}"
+        },
+        "Transforms": [
+          { "PathRemovePrefix": "/api/SERVICE_NAME" }
+        ]
+      }
+    },
+    "Clusters": {
+      "SERVICE_NAME-cluster": {
+        "HttpClient": {
+          "ActivityTimeout": "00:00:30"
+        },
+        "HealthCheck": {
+          "Active": {
+            "Enabled": true,
+            "Interval": "00:00:10",
+            "Timeout": "00:00:05",
+            "Path": "/health"
+          }
+        },
+        "Destinations": {
+          "d1": {
+            "Address": "http://localhost:PORT/"
+          }
+        }
+      }
+    }
+  }
+}

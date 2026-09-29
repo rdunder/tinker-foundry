@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YARP", "src\YARP\YARP\YARP.csproj", "{833E7BD7-226F-4840-9AF7-F7A271C7DB11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinkerFoundryCommon", "src\libs\TinkerFoundryCommon\TinkerFoundryCommon.csproj", "{21A24F14-087D-452B-8C3A-BC25E4AB6A08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{833E7BD7-226F-4840-9AF7-F7A271C7DB11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{833E7BD7-226F-4840-9AF7-F7A271C7DB11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{833E7BD7-226F-4840-9AF7-F7A271C7DB11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{833E7BD7-226F-4840-9AF7-F7A271C7DB11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21A24F14-087D-452B-8C3A-BC25E4AB6A08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21A24F14-087D-452B-8C3A-BC25E4AB6A08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21A24F14-087D-452B-8C3A-BC25E4AB6A08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21A24F14-087D-452B-8C3A-BC25E4AB6A08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
